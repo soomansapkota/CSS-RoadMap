@@ -1,0 +1,72 @@
+
+*{
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+html,body{
+   margin:0;
+}
+.full-screen{
+    background-image: url("bacc.jpeg");
+    height:100vh;
+    width:100vw;
+    background-size:cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formscreen{
+    background-color: rgba(96, 141, 155, 0.7);
+    border-radius: 10px;
+    padding: 50px 30px;
+    width:90%;
+    max-width:500px;
+}
+.welcome{
+    color: cornsilk;
+    text-align: center;
+    margin:0 40px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    font-weight: normal;
+ 
+}
+.Group{
+   display:flex;
+   flex-direction: column;
+   margin: 20px;
+    
+}
+.Group label{
+    color:rgb(0, 0, 0);
+    margin-bottom:5px;
+ 
+}
+.Group input{
+    font-size: 20px;
+    padding:10px 5px;
+    background-color: rgba(96, 141, 155, 0.7);
+    border:2px solid rgb(180, 181, 202);
+    color: whitesmoke;
+}
+.login{
+    padding: 15px 0px;
+    width: 100%;
+    background-color:rgb(125, 156, 180, 0.5);
+    border: 2px solid wheat ;
+    color:white;
+    align-items: center;
+    margin: 5px;
+    font-size: 1em;
+}
+.login:hover{
+    background-color:rgb(177, 165, 150, 0.5);
+}
+.login:focus{
+    background-color: rgb(134, 123, 77, 0.5);
+}
+.Group input:focus{
+    outline: 1px solid white;
+    
+}
