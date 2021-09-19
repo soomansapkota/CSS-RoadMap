@@ -1,0 +1,74 @@
+html,body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+}
+.image{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-image: url(th.png);
+    background-size:cover;
+    background-position:right;
+    position:relative;
+}
+.image::before,
+.image::after
+{ 
+    --scale:0;
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    
+}
+.image::before{
+    content:attr(data-tooltip);
+    padding:10px;
+    width: max-content;
+    border-radius: 10%;
+    max-width: 100%;
+    background: peachpuff;
+}
+.image:hover::before
+{
+    --scale: 1;
+
+
+}.imag{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-image: url(bacc.jpeg);
+    background-size:cover;
+    background-position:center;
+    position:relative;  
+}
+.imag::before,
+.imag::after
+{ 
+    --scale:0;
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 150ms transform;
+    
+}
+.imag::before{
+    content:attr(data-tooltip);
+    padding:10px;
+    width: max-content;
+    border-radius: 10%;
+    max-width: 100%;
+    background: peachpuff;
+}
+.imag:hover::before
+{
+    --scale: 1;
+
+
+}
