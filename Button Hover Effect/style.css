@@ -1,0 +1,149 @@
+   *{
+    box-sizing: border-box;
+   }
+   
+   body{
+
+    height:100vh;
+    overflow:hidden;
+    background-color:#f3a9f0;
+
+   }
+   
+   body,.container
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    }
+
+    button
+    {
+    height:4em;
+    width: 10rem;
+    margin:1rem;
+    }
+
+    .btn
+    {
+        background-color: var(--background-color);
+        color: black;
+        padding: .5em 1em;
+        border:none;
+        outline: none;
+        position:relative;
+        cursor:pointer;
+
+        --background-color:#ed8080;
+    }
+
+    .btn.button1::before{
+
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-color: rgb(162, 206, 221);
+
+        transition: transform 300ms ease-in-out;
+        transform:scaleX(0);
+        transform-origin: left;
+
+    }
+
+    .btn.button1{
+
+        z-index: 1;
+        transition: color 300ms ease-in-out;
+    }
+
+    .btn.button1:hover::before,
+    .btn.button1:focus::before{
+
+        transform:scaleX(1);
+        
+    }
+    .btn.button1:hover,
+    .btn.button1.focus{
+
+       color:white;
+       
+    }
+
+    .btn.button2::before{
+
+        content: '';
+        position:absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right:0;
+        z-index:-1;
+        background-color: #e76e6e ;
+        border-radius: 50%;
+        transition: transform 300ms ease-in-out;
+        transform: scale(1.5);
+        
+        
+    }
+
+    .btn.button2{
+
+        z-index: 1;
+         background-color: rgb(162, 206, 221);
+        overflow: hidden;
+        transition: color 300ms ease-in-out;
+       
+    }
+
+    .btn.button2:hover::before,
+    .btn.button2:focus::before{
+
+        transform:scale(0);
+        
+    }
+
+    .btn.button2:hover,
+    .btn.button2.focus{
+
+       color:white;
+       
+    }
+
+    .btn.button3::before{
+
+        content: '';
+        position:absolute;
+        bottom:0;
+        left: 0;
+        right:0;
+        /* z-index:-1; */
+        background-color: rgb(162, 206, 221) ;
+        height:4px;
+        transition: transform 200ms ease-in-out;
+        transform: scale(0);
+
+        
+        
+    }
+    .btn.button3:hover::before,
+    .btn.button3:focus::before{
+
+
+        transform:scaleX(1);
+        
+    }
+
+    .btn.button3:hover,
+    .btn.button3.focus{
+       transition: color 300ms ease-in-out;
+       color:white;
+       
+    }
+
